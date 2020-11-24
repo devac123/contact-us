@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+ 
+.icon-iis-web-dev:before { content: '󡠀'; } /* '\e1800' */
+.icon-iis-app-dev:before { content: '󡠁'; } /* '\e1801' */
+.icon-iis-soft-dev:before { content: '󡠂'; } /* '\e1802' */
+.icon-iis-smo:before { content: '󡠃'; } /* '\e1803' */
+.icon-iis-seo:before { content: '󡠄'; } /* '\e1804' */
+.icon-iis-iis-cms:before { content: '󡠅'; } /* '\e1805' */
+.icon-iis-cart-launcher:before { content: '󡠆'; } /* '\e1806' */
+.icon-iis-iis-invoice:before { content: '󡠇'; } /* '\e1807' */

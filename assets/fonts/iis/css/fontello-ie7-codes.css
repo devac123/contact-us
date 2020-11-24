@@ -1,0 +1,9 @@
+
+.icon-iis-web-dev { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe1800;&nbsp;'); }
+.icon-iis-app-dev { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe1801;&nbsp;'); }
+.icon-iis-soft-dev { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe1802;&nbsp;'); }
+.icon-iis-smo { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe1803;&nbsp;'); }
+.icon-iis-seo { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe1804;&nbsp;'); }
+.icon-iis-iis-cms { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe1805;&nbsp;'); }
+.icon-iis-cart-launcher { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe1806;&nbsp;'); }
+.icon-iis-iis-invoice { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe1807;&nbsp;'); }
