@@ -48,23 +48,22 @@ function sendMail($emailObj) {
             $mail->addBCC($emailObj->BCC);
         }
         
-        $mail->Subject = $emailObj->Subject;
+        // $mail->Subject = $emailObj->Subject;
         $mail->Body    = $emailObj->Body;
         $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 
-        //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-        //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-
-
-        /*if(!$mail->send()) {
+        // //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+        // //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+        if(!$mail->send()) {
             $ret_message .= 'Message could not be sent.';
             $ret_message .= 'Mailer Error: ' . $mail->ErrorInfo;
-        } else {
-            $ret_message .= 'Message has been sent';
-        }*/
+        }
+         else {
+            $ret_message .=$emailObj->Address;
+         }
 
-  echo $ret_message;
+     echo $ret_message;
     
 
 }
