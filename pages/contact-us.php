@@ -70,10 +70,13 @@
                     <div style="width:100%; padding-bottom:15px;">
                         <input class="con-input-element con-input-area" name = "message"  placeholder="Message*"  data-key="person_msg" data-group="contact-us" />
                     </div>
-                    <div style="width:100%; padding-bottom:15px; text-align:center;">
-                        <input type="submit"  id="submit_btn" class="btn yellow large btn-decoration"  data-selgroup="contact-us" data-controller="contactus" data-func="SendQuery" />
+                    <div style="width:100%; padding-bottom:15px; text-align:center; " id= "loading-spiner">
+                        <input type="submit"  id="submit_btn" class="btn yellow large btn-decoration"  data-selgroup="contact-us" data-controller="contactus" data-func="SendQuery" />     
+                        
                     </div>
-                </div>
+                
+                
+
             </div>
             <!-- contact us form send end her -->
 

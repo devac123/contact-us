@@ -13,7 +13,7 @@ function sendMail($emailObj) {
 
     $ret_message ="fgdghidfg";
         $mail = new PHPMailer();
-        $smtp_set = parse_ini_file($_SERVER["DOCUMENT_ROOT"].'smtp.ini');
+        $smtp_set = parse_ini_file($_SERVER["DOCUMENT_ROOT"].'app.ini');
 
         //$mail->SMTPDebug = 3;                                   // Enable verbose debug output
 
@@ -31,8 +31,8 @@ function sendMail($emailObj) {
         $mail->WordWrap = 50;                                 // Set word wrap to 50 characters
 
         $mail->From = $smtp_set['FromEmail'];
-        $mail->FromName = $smtp_set['FromName'];
-        $mail->addReplyTo($smtp_set['ReplyTo']);
+        $mail->FromName = $emailObj->Name;
+        $mail->addReplyTo($emailObj->Replyto);
 
          
 

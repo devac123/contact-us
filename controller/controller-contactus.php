@@ -18,14 +18,31 @@ if (isset($_POST['callFunc']) && ($_POST['callFunc'] == "SendQuery"))
     $msg = $json['person_msg'];
     
     $recipent1->Subject = "query";
-    $recipent1->Address = $email;
-    $recipent1->Body =  "Thankyou for contacting us ".$name. " we will reply you as soon as possible";
+    $recipent1->Name = 'Mandeep Saini';
+    $recipent1->Address = $email; 
+    $recipent1->Replyto = "help@devologix.com";
+    $recipent1->FromEmail = "mandeep@devologix.com";
+
+    $MessageBody = "";
+    $MessageBody .= "Dear ".$name.",<br/><br/>";
+    $MessageBody .= "We have recevied your query, Our executive will contact you with 24 working hours.<br/><br/>";
+    $MessageBody .= "For futher query or information, please feel free to contact us at:<br/>";
+    $MessageBody .= "Helpline: +91 97813-97819 <br/>";
+    $MessageBody .= "Email: help@devologix.com <br/>";
+    $MessageBody .= " <br/>";
+    $MessageBody .= " Regards,<br/>";
+    $MessageBody .= " Team Devologix<br/>";
+
+    $recipent1->Body =  $MessageBody;
     $recipent1->Phone =  $phone;
     
     // this one is for admin
     $recipent2 = new stdClass();
     $recipent2->Address = 'mandeep@devologix.com';
+    $recipent2->Name = $name;
     $recipent2->Body = 'Hello Admin'.$name. 'Contact us and their query is '.$msg . 'and customer detail is '.'Name'.$name.'E-mail'.$email ;
+    $recipent2->Replyto = $email;
+    $recipent2->FromEmail = $email;
 
     sendMail($recipent1);
     sendMail($recipent2);
