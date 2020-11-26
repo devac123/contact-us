@@ -17,6 +17,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <!-- <asp:ContentPlaceHolder ID="metas" runat="server"></asp:ContentPlaceHolder> -->
 
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
 
     <link href="/assets/css/iis-bootstrap.css" rel="stylesheet" />
     <link href="/assets/css/main.css" rel="stylesheet" />
@@ -25,7 +26,6 @@
     <link href="/assets/fonts/basic/css/fontello.css" rel="stylesheet" type="text/css" />
     <link href="/assets/fonts/iis/css/fontello.css" rel="stylesheet" type="text/css" />
     <link href="/assets/fonts/basic/css/animation.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <script src="/assets/js/addlink.js" type="text/javascript"></script>
     <script src="/assets/js/jquery-1.11.3.min.js"></script>

@@ -11,7 +11,7 @@ require 'src/SMTP.php';
 
 function sendMail($emailObj) {
 
-    $ret_message ="fgdghidfg";
+    $ret_message ="";
         $mail = new PHPMailer();
         $smtp_set = parse_ini_file($_SERVER["DOCUMENT_ROOT"].'app.ini');
 

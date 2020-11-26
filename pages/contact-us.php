@@ -7,6 +7,12 @@
 <!-- </asp:Content> -->
 <!-- <asp:Content ID="Content3" ContentPlaceHolderID="Body" Runat="Server"> -->
 
+<style>
+ .loading-btn{ height:46px ; background-image:url('/assets/img/loading-dots.gif'); background-position:center center; background-repeat: no-repeat;  background-size:70px; }
+ 
+
+
+</style>
 
 
 
@@ -57,23 +63,27 @@
                 <div class="col-5">
                     <div style="width:100%; height:320px; background-color:; background-image:url(/assets/img/other/con-page-left.png); background-repeat:no-repeat; background-position:center;"></div>
                 </div>
-                <div class="col-7">
-                    <div style="width:100%; padding-bottom:15px;">
+                <div class="col-7"style =" ">
+                    <div style="width:100%; padding-bottom:15px; display :none;" class="apriciate-msg" >
+                       <img src="/assets/img/loading-hourglass.gif" style="width: 90% ;" >
+                    </div>
+                     <div style="width:100%; padding-bottom:15px;" class="form-mail" >
                         <input type="text"  name = "sendername" class="con-input-element" placeholder="Name*" data-key="person_name" data-group="contact-us" />
                     </div>
-                    <div style="width:100%; padding-bottom:15px;">
+                    <div style="width:100%; padding-bottom:15px;" class="form-mail">
                         <input type="text" name = "senderemail"  class="con-input-element" placeholder="Email Address*" data-key="person_email" data-group="contact-us" />
                     </div>
-                    <div style="width:100%; padding-bottom:15px;">
+                    <div style="width:100%; padding-bottom:15px;" class="form-mail">
                         <input type="tel" name = "senderph"  class="con-input-element" placeholder="Phone*" data-key="person_phone" data-group="contact-us" />
                     </div>
-                    <div style="width:100%; padding-bottom:15px;">
+                    <div style="width:100%; padding-bottom:15px;" class="form-mail">
                         <input class="con-input-element con-input-area" name = "message"  placeholder="Message*"  data-key="person_msg" data-group="contact-us" />
                     </div>
-                    <div style="width:100%; padding-bottom:15px; text-align:center; " id= "loading-spiner">
-                        <input type="submit"  id="submit_btn" class="btn yellow large btn-decoration"  data-selgroup="contact-us" data-controller="contactus" data-func="SendQuery" />     
-                        
-                    </div>
+                    <div style="width:100%; padding-bottom:15px; text-align:center; " id= "loading-spiner" class="form-mail">
+                        <input type="submit"  id="submit_btn" class="btn yellow large btn-decoration"  data-selgroup="contact-us" data-controller="contactus" data-func="SendQuery" />    
+                        <span class= "empty-error" style="display:none;">invalid credentials!</span> 
+                        <span  class="btn default  large btn-decoration loading-btn" style=" display:none;">Sending..</span>
+                    </div> 
                 
                 
 

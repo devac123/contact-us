@@ -47,8 +47,6 @@ if (isset($_POST['callFunc']) && ($_POST['callFunc'] == "SendQuery"))
     sendMail($recipent1);
     sendMail($recipent2);
 
-
-
 }
 else if (isset($_POST['callFunc']) && ($_POST['callFunc'] == "contactus")) 
 {
