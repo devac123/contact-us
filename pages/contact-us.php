@@ -65,8 +65,9 @@
                 </div>
                 <div class="col-7"style =" ">
                     <div style="width:100%; padding-bottom:15px; display :none;" class="apriciate-msg" >
-                       <img src="/assets/img/loading-hourglass.gif" style="width: 90% ;" >
+                       <img src="/assets/img/loading-hourglass.gif"  style="width: 90% ;" >
                     </div>
+                    
                      <div style="width:100%; padding-bottom:15px;" class="form-mail" >
                         <input type="text"  name = "sendername" class="con-input-element" placeholder="Name*" data-key="person_name" data-group="contact-us" />
                     </div>
@@ -84,9 +85,6 @@
                         <span class= "empty-error" style="display:none;">invalid credentials!</span> 
                         <span  class="btn default  large btn-decoration loading-btn" style=" display:none;">Sending..</span>
                     </div> 
-                
-                
-
             </div>
             <!-- contact us form send end her -->
 
