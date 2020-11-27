@@ -5,28 +5,20 @@ $('body').on('click', '#submit_btn', function (e) {
 
   $(this).parent().children(".loading-btn").css('display', 'inline-block');
   $(this).css('display', 'none'); 
+  console.log("validation form");
+  
+  
+  validateForm();
+  
+  console.log("validation form");
+ 
+  
   DataObj = FormToObj(group);
-  console.log()
-  // form vakidation
-  if (DataObj['person_name']== "")
-  {
-    console.log("name null")
-  }
-  if (DataObj['person_email']=="")
-  {
-    console.log("email null")
-  }
-  if (DataObj['person_phone']=="")
-  {
-    console.log(" null phone")
-  }
-  if (DataObj['person_msg']== "")
-  {
-    console.log(" null msg")
-  }
-   // form vakidation ends her 
 
-  console.log(DataObj);
+  // form vakidation
+  // console.log(DataObj);
+
+  // ajax start from here
   $('input[data-selgroup="' + group + '"]').parent().children(".empty-error").css('display', 'none');
   jQuery.ajax({
     type: "POST",
@@ -56,16 +48,27 @@ $('body').on('click', '#submit_btn', function (e) {
 
 });
 
+  // ajax end here
+
 function FormToObj(group) {
+  // creating for make an objecet
   DataObj = {};
   $('input[data-group="' + group + '"]').each(function (e) {
-
     DataObj[$(this).attr('data-key')] = $(this).val();
-    console.log("dfjhskdjf");
-
   });
 
   return DataObj;
 }
+
+function validateForm()
+{
+    name1 =  $(`input[data-group= "contact-us"]`).parent()
+    console.log(name1,"00000000000000000");
+     
+}
+
+// form validation
+
+
 
 

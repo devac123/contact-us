@@ -64,27 +64,29 @@
                     <div style="width:100%; height:320px; background-color:; background-image:url(/assets/img/other/con-page-left.png); background-repeat:no-repeat; background-position:center;"></div>
                 </div>
                 <div class="col-7"style =" ">
+                    
                     <div style="width:100%; padding-bottom:15px; display :none;" class="apriciate-msg" >
                        <img src="/assets/img/loading-hourglass.gif"  style="width: 90% ;" >
                     </div>
                     
                      <div style="width:100%; padding-bottom:15px;" class="form-mail" >
-                        <input type="text"  name = "sendername" class="con-input-element" placeholder="Name*" data-key="person_name" data-group="contact-us" />
+                        <input type="text"  data-validation-pattern=""  required name = "sendername" class="con-input-element" placeholder="Name*" data-key="person_name" data-group="contact-us" />
                     </div>
                     <div style="width:100%; padding-bottom:15px;" class="form-mail">
-                        <input type="text" name = "senderemail"  class="con-input-element" placeholder="Email Address*" data-key="person_email" data-group="contact-us" />
+                        <input type="text"  data-validation-pattern="" required name = "senderemail"  class="con-input-element" placeholder="Email Address*" data-key="person_email" data-group="contact-us" />
                     </div>
                     <div style="width:100%; padding-bottom:15px;" class="form-mail">
-                        <input type="tel" name = "senderph"  class="con-input-element" placeholder="Phone*" data-key="person_phone" data-group="contact-us" />
+                        <input type="tel"  data-validation-pattern="" required name = "senderph"  class="con-input-element" placeholder="Phone*" data-key="person_phone" data-group="contact-us" />
                     </div>
                     <div style="width:100%; padding-bottom:15px;" class="form-mail">
-                        <input class="con-input-element con-input-area" name = "message"  placeholder="Message*"  data-key="person_msg" data-group="contact-us" />
+                        <input class="con-input-element con-input-area"  data-validation-pattern="" required name = "message"  placeholder="Message*"  data-key="person_msg" data-group="contact-us" />
                     </div>
                     <div style="width:100%; padding-bottom:15px; text-align:center; " id= "loading-spiner" class="form-mail">
                         <input type="submit"  id="submit_btn" class="btn yellow large btn-decoration"  data-selgroup="contact-us" data-controller="contactus" data-func="SendQuery" />    
                         <span class= "empty-error" style="display:none;">invalid credentials!</span> 
                         <span  class="btn default  large btn-decoration loading-btn" style=" display:none;">Sending..</span>
                     </div> 
+               
             </div>
             <!-- contact us form send end her -->
 

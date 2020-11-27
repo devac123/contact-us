@@ -38,7 +38,7 @@ function sendMail($emailObj) {
 
         $mail->addAddress($emailObj->Address);     // Add a recipient
         
-
+ 
         if (isset($emailObj->CC) && ($emailObj->CC != ''))
         {
             $mail->addCC($emailObj->CC);
@@ -55,13 +55,13 @@ function sendMail($emailObj) {
 
         // //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
         // //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-        if(!$mail->send()) {
-            $ret_message .= 'Message could not be sent.';
-            $ret_message .= 'Mailer Error: ' . $mail->ErrorInfo;
-        }
-         else {
-            $ret_message .=$emailObj->Address;
-         }
+        // if(!$mail->send()) {
+        //     $ret_message .= 'Message could not be sent.';
+        //     $ret_message .= 'Mailer Error: ' . $mail->ErrorInfo;
+        // }
+        //  else {
+        //     $ret_message .=$emailObj->Address;
+        //  }
 
      echo $ret_message;
     
