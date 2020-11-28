@@ -10,7 +10,9 @@
 <style>
  .loading-btn{ height:46px ; background-image:url('/assets/img/loading-dots.gif'); background-position:center center; background-repeat: no-repeat;  background-size:70px; }
  
-
+.is-invalid{
+    display: none;
+}
 
 </style>
 
@@ -70,16 +72,20 @@
                     </div>
                     
                      <div style="width:100%; padding-bottom:15px;" class="form-mail" >
-                        <input type="text"  data-validation-pattern=""  required name = "sendername" class="con-input-element" placeholder="Name*" data-key="person_name" data-group="contact-us" />
+                        <input type="text" id ="name"  data-validation-pattern=""  required name = "sendername" class="con-input-element" placeholder="Name*" data-key="person_name" data-group="contact-us" />
+                        <span class="formerror  " style="display: none; color: red;">Not Valid</span>
                     </div>
                     <div style="width:100%; padding-bottom:15px;" class="form-mail">
-                        <input type="text"  data-validation-pattern="" required name = "senderemail"  class="con-input-element" placeholder="Email Address*" data-key="person_email" data-group="contact-us" />
+                        <input type="text" id ="email"  data-validation-pattern="" required name = "senderemail"  class="con-input-element" placeholder="Email Address*" data-key="person_email" data-group="contact-us" />
+                        <span class="formerror  " style="display: none; color: red;">Not Valid</span>
                     </div>
                     <div style="width:100%; padding-bottom:15px;" class="form-mail">
-                        <input type="tel"  data-validation-pattern="" required name = "senderph"  class="con-input-element" placeholder="Phone*" data-key="person_phone" data-group="contact-us" />
+                        <input type="tel" id ="phone"  data-validation-pattern="" required name = "senderph"  class="con-input-element" placeholder="Phone*" data-key="person_phone" data-group="contact-us" />
+                        <span class="formerror  " style="display: none; color: red;">Not Valid</span>
                     </div>
                     <div style="width:100%; padding-bottom:15px;" class="form-mail">
-                        <input class="con-input-element con-input-area"  data-validation-pattern="" required name = "message"  placeholder="Message*"  data-key="person_msg" data-group="contact-us" />
+                        <input class="con-input-element con-input-area"  id = "msg"  placeholder="Message*"  data-key="person_msg" data-group="contact-us" />
+                        <span class="formerror  " style="display: none; color: red;">Not Valid</span>
                     </div>
                     <div style="width:100%; padding-bottom:15px; text-align:center; " id= "loading-spiner" class="form-mail">
                         <input type="submit"  id="submit_btn" class="btn yellow large btn-decoration"  data-selgroup="contact-us" data-controller="contactus" data-func="SendQuery" />    

@@ -1,3 +1,92 @@
+const name = $('#name');
+const email = $('#email');
+const phone = $('#phone');
+const message = $('#msg');
+
+// validation creating function
+function formValidation() 
+{   
+    name.blur(function(){
+    let regex = /^[a-zA-Z]([0-9a-zA-Z]){2,10}$/;
+    let str = name.val();
+   
+    if (str == ""){
+        name.parent().children('.formerror').text("please enter your name");
+        name.parent().children('.formerror').css('display','inline-block');
+    }
+    else if(regex.test(str)){
+        
+        name.parent().children('.formerror').css('display','none');
+      }
+      else{
+      
+        name.parent().children('.formerror').css('display','inline-block');    
+    }
+  })
+  email.blur(function(){
+
+    let regex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
+    let str = email.val();
+    
+    if (str == "")
+    {
+      email.parent().children('.formerror').text("please enter your Email");
+      email.parent().children('.formerror').css('display','inline-block');
+     }
+    else if(regex.test(str)){
+      console.log('Your Email is valid');
+      email.parent().children('.formerror').css('display','none');
+    }
+    else{
+     
+        email.parent().children('.formerror').css('display','inline-block');  
+    }
+
+  })
+  phone.blur(function(){
+    let str = phone.val();
+    let regex = /^\d{10}$/;
+    if (str == "")
+    {
+      phone.parent().children('.formerror').text("please enter your phone");
+      phone.parent().children('.formerror').css('display','inline-block');
+    }
+    else if(regex.test(str)){
+      console.log('Your Phone-no. is valid');
+      phone.parent().children('.formerror').css('display','none');
+    }
+    else{
+      phone.parent().children('.formerror').css('display','inline-block');
+    }
+    
+  })
+  message.blur(function(){
+    let str = msg.value;
+    let regex = /^[a-zA-Z]([0-9a-zA-Z]){10,100}$/;
+    if (str == "")
+    {  
+      message.parent().children('.formerror').text("please enter your Query");
+      message.parent().children('.formerror').css('display','inline-block');
+    }
+    else if(regex.test(str))
+    {
+      // alert("Thank - you !")
+      message.parent().children('.formerror').css('display','none');
+    }
+    else{
+      message.parent().children('.formerror').text(" message length must be atleast 10 charcter");
+      message.parent().children('.formerror').css('display','inline-block');
+    }
+  })
+};
+
+
+
+
+// validation creating function end here
+
+formValidation(); 
+
 $('body').on('click', '#submit_btn', function (e) {
   var group = $(this).attr('data-selgroup');
   var func = $(this).attr('data-func');
@@ -5,19 +94,9 @@ $('body').on('click', '#submit_btn', function (e) {
 
   $(this).parent().children(".loading-btn").css('display', 'inline-block');
   $(this).css('display', 'none'); 
-  console.log("validation form");
   
-  
-  validateForm();
-  
-  console.log("validation form");
+  DataObj = FormToObj(group)
  
-  
-  DataObj = FormToObj(group);
-
-  // form vakidation
-  // console.log(DataObj);
-
   // ajax start from here
   $('input[data-selgroup="' + group + '"]').parent().children(".empty-error").css('display', 'none');
   jQuery.ajax({
@@ -47,7 +126,6 @@ $('body').on('click', '#submit_btn', function (e) {
   });
 
 });
-
   // ajax end here
 
 function FormToObj(group) {
@@ -60,14 +138,6 @@ function FormToObj(group) {
   return DataObj;
 }
 
-function validateForm()
-{
-    name1 =  $(`input[data-group= "contact-us"]`).parent()
-    console.log(name1,"00000000000000000");
-     
-}
-
-// form validation
 
 
 
