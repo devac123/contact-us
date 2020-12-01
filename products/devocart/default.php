@@ -23,7 +23,7 @@
 
                 <div class="pos_home_big_img" style="position:relative; display:none;">
                     <div class="yt_video_play_btn" style="width:70px; height:70px; background-color:#84C700; border:3px solid white; font-size:30px; padding-top:13px; padding-left:6px; text-align:center; border-radius:50%; position:absolute; top:0px; left:0px; right:0px; bottom:0px; margin:auto; box-shadow:0px 4px 6px rgba(0, 0, 0, 0.30); cursor:pointer;"><i class="icon-play"></i></div>
-                    <img src="/assets/img/project_imgs/hero-img1.png" />
+                    <img src="/assets/img/project_imgs/hero-img.png" />
                 </div>
 
             </div>
@@ -739,7 +739,7 @@
 
 
 
-<%--<section class="pos_sec_pad pos_key_feature_sec" style="padding-top:100px; background-color:#F9F9F9;">
+<section class="pos_sec_pad pos_key_feature_sec" style="padding-top:100px; background-color:#F9F9F9;">
     <div class="container">
 
         <div class="pos_page_heading">Key Features</div>

@@ -148,8 +148,9 @@ a.menu-item-head:after{content:none;}
 
 .btn.facebook_button .box{background-color:#48649F;}
 .btn.googlep_button .box{background-color:#DD4B39 ;}
-.whattsapp-color {background-color:#47dd39 ;}
-.insta-color {background-color:#8a52e4 ;}
+/* .btn.googlep_button .box{background-color:#DD4B39 ;} */
+/* .whattsapp-color {background-color:#47dd39 ;}
+.insta-color {background-color:#8a52e4 ;} */
 
 
 .btn-slideup{ height:45px; width:150px;  background-color:#545454; display:inline-block; position:relative; overflow:hidden; margin:0px 10px 10px 0px; }

@@ -136,12 +136,11 @@
                 </div>
 
                 <div class="container" style="padding-bottom:20px; text-align:center;">
-                                <a href="https://www.facebook.com/InfinityInfoSol" target="_blank" class="btn-slideup"><div class="text"> <i style="color:#507BBE;" class="icon-facebook"></i> | &nbsp; Like Us</div><span style="background-color:#507BBE;" class="slide"></span></a>
+                                <a href="https://www.facebook.com/InfinityInfoSol" target="_blank" class="btn-slideup"><div class="text"> <i style="color:#507BBE;" class=" icon-facebook "></i> | &nbsp; Like Us</div><span style="background-color:#507BBE;" class="slide"></span></a>
                               
-                                <a href="https://plus.google.com/109460498433395611983" target="_blank" class="btn-slideup"><div class="text whattsapp-color" ;><i style="color:rgb(101,188,84);" class="icon-whatsapp"></i> | &nbsp;Whatsapp</div><span  style="background-color:#EF4745;" class="slide"></span></a>
-
+                                <!-- <a href="https://plus.google.com/109460498433395611983" target="_blank" class="btn-slideup"><div class="text whattsapp-color" ;><i style="color:rgb(101,188,84);" class="icon-whatsapp"></i> | &nbsp;Whatsapp</div><span  style="background-color:#EF4745;" class="slide"></span></a> -->
                                 
-                                <a href="https://plus.google.com/109460498433395611983" target="_blank" class="btn-slideup"><div class="text insta-color" ><i style="color:rgb(101,188,84);" class="icon-instagram"></i> | &nbsp;Instagram</div><span  style="background-color:#EF4745;" class="slide"></span></a>
+                                <!-- <a href="https://plus.google.com/109460498433395611983" target="_blank" class="btn-slideup"><div class="text insta-color" ><i style="color:rgb(101,188,84);" class="icon-instagram"></i> | &nbsp;Instagram</div><span  style="background-color:#EF4745;" class="slide"></span></a> -->
                                 <a href="https://www.youtube.com/user/InfinityInfoSol" target="_blank" class="btn-slideup"><div class="text"><i style="color:#EC6B53;" class="icon-youtube"></i> | &nbsp; Subscribe</div><span style="background-color:#EC6B53;"  class="slide"></span></a>
                                 <a href="#" target="_blank" class="btn-slideup"><div class="text"><i style="color:#64CCEF;" class="icon-twitter"></i> | &nbsp; Follow Us</div><span  style="background-color:#64CCEF;" class="slide"></span></a>
                                 <a href="https://plus.google.com/109460498433395611983" target="_blank" class="btn-slideup"><div class="text "><i style="color:#EF4745;" class="icon-gplus"></i> | &nbsp; Add Us</div><span  style="background-color:#EF4745;" class="slide"></span></a>
@@ -186,7 +185,6 @@
                            <a class="links" href="/coming-soon">Catagories</a>
                            <a class="links" href="/coming-soon">Trending</a>
                            <a class="links" href="/coming-soon">Recent</a>
-                           
                        </div>
 
                      <div class="col-2 col-ml-6">
@@ -238,7 +236,7 @@
 
                          <div id="frm-contact-us-popup" class="iis-forms">
                             <div  style="height:130px; background:#fec51b url('/assets/img/contact-us-form-head.png') center center no-repeat; background-size:auto 100%;"> </div>
-                             <div class="zigzag-top" style="background-color:#fedf80;"></div>
+                             <div class="zigzag-top" style="background-color: #f7c90d;"></div>
                              
                               <div class="form-parts-con">
                                  <div class="form-part active">
@@ -247,6 +245,7 @@
                                    <div style="min-height:300px; padding:5px 20px;">
                                  <div style=" font-size:30px; color:#545454;  font-weight:300; margin-bottom:20px; ">
                                      Feel Free to leave us a Message
+                                     
                                  </div>
 
                                  <div style="height:40px; background-color:#fff; margin-top:5px; margin-bottom:5px; border:1px solid #ddd; display:table; width:100%; position:relative;">

@@ -2,6 +2,7 @@ const name = $('#name');
 const email = $('#email');
 const phone = $('#phone');
 const message = $('#msg');
+const submit_btn = $('#submit_btn');
 
 // validation creating function
 function formValidation() 
@@ -13,50 +14,64 @@ function formValidation()
     if (str == ""){
         name.parent().children('.formerror').text("please enter your name");
         name.parent().children('.formerror').css('display','inline-block');
+        submit_btn.attr('id', 'nonind'); 
+
     }
     else if(regex.test(str)){
         
         name.parent().children('.formerror').css('display','none');
+        submit_btn.attr('id', 'submit_btn'); 
       }
       else{
+        name.parent().children('.formerror').text("invalid name!");
+        name.parent().children('.formerror').css('display','inline-block');
+        submit_btn.attr('id', 'nonind');    
+      }
+    })
+    email.blur(function(){
       
-        name.parent().children('.formerror').css('display','inline-block');    
-    }
-  })
-  email.blur(function(){
-
-    let regex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
-    let str = email.val();
-    
-    if (str == "")
-    {
-      email.parent().children('.formerror').text("please enter your Email");
-      email.parent().children('.formerror').css('display','inline-block');
-     }
-    else if(regex.test(str)){
-      console.log('Your Email is valid');
-      email.parent().children('.formerror').css('display','none');
-    }
-    else{
-     
-        email.parent().children('.formerror').css('display','inline-block');  
-    }
-
-  })
-  phone.blur(function(){
-    let str = phone.val();
-    let regex = /^\d{10}$/;
-    if (str == "")
-    {
-      phone.parent().children('.formerror').text("please enter your phone");
+      let regex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
+      let str = email.val();
+      
+      if (str == "")
+      {
+        email.parent().children('.formerror').text("please enter your Email");
+        email.parent().children('.formerror').css('display','inline-block');
+        submit_btn.attr('id', 'nonind'); 
+      }
+      else if(regex.test(str)){
+        
+        email.parent().children('.formerror').css('display','none');
+        submit_btn.attr('id', 'submit_btn'); 
+      }
+      else{
+        
+        email.parent().children('.formerror').text("invalid email Address!");
+        email.parent().children('.formerror').css('display','inline-block'); 
+        submit_btn.attr('id', 'nonind');   
+        
+        
+      }
+      
+    })
+    phone.blur(function(){
+      let str = phone.val();
+      let regex = /^\d{10}$/;
+      if (str == "")
+      {
+        phone.parent().children('.formerror').text("please enter your phone");
+        phone.parent().children('.formerror').css('display','inline-block');
+        submit_btn.attr('id', 'nonind'); 
+      }
+      else if(regex.test(str)){
+        console.log('Your Phone-no. is valid');
+        phone.parent().children('.formerror').css('display','none');
+        submit_btn.attr('id', 'submit_btn'); 
+      }
+      else{
+        phone.parent().children('.formerror').text("invalid Phone Number!");
       phone.parent().children('.formerror').css('display','inline-block');
-    }
-    else if(regex.test(str)){
-      console.log('Your Phone-no. is valid');
-      phone.parent().children('.formerror').css('display','none');
-    }
-    else{
-      phone.parent().children('.formerror').css('display','inline-block');
+      submit_btn.attr('id', 'nonind');  
     }
     
   })
@@ -67,15 +82,18 @@ function formValidation()
     {  
       message.parent().children('.formerror').text("please enter your Query");
       message.parent().children('.formerror').css('display','inline-block');
+      submit_btn.attr('id', 'nonind'); 
     }
     else if(regex.test(str))
     {
       // alert("Thank - you !")
       message.parent().children('.formerror').css('display','none');
+      submit_btn.attr('id', 'submit_btn'); 
     }
     else{
       message.parent().children('.formerror').text(" message length must be atleast 10 charcter");
       message.parent().children('.formerror').css('display','inline-block');
+      submit_btn.attr('id', 'nonind');  
     }
   })
 };
@@ -107,9 +125,11 @@ $('body').on('click', '#submit_btn', function (e) {
       console.log('Ajax Success :' + result)
       $('input[data-selgroup="' + group + '"]').parent().children(".loading-btn").css('display', 'none');
       $('input[data-selgroup="' + group + '"]').css('display', 'inline-block');
-      if (DataObj['person_name'] == "" && DataObj['person_email'] == "" && DataObj['person_phone'] == "" && DataObj['person_msg'] == "") {
+      if (DataObj['person_name'] == "" || DataObj['person_email'] == "" || DataObj['person_phone'] == "" || DataObj['person_msg'] == "") 
+      {
         $('input[data-selgroup="' + group + '"]').parent().children(".submit-btn").css('display', 'block');
         $('input[data-selgroup="' + group + '"]').parent().children(".empty-error").css('display', 'inline-block');
+        $('#submit_btn').attr('id', 'nonind');  
       }
       else {
         var elm = $('input[data-selgroup="' + group + '"]').parent().parent();

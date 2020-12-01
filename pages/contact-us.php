@@ -7,7 +7,9 @@
 <!-- </asp:Content> -->
 <!-- <asp:Content ID="Content3" ContentPlaceHolderID="Body" Runat="Server"> -->
 
-<style>
+    <?php $ini = parse_ini_file('../app.ini'); ?>
+    <?php include $_SERVER["DOCUMENT_ROOT"].$ini['folder_path'].'includes/header.php';?>
+ <style>
  .loading-btn{ height:46px ; background-image:url('/assets/img/loading-dots.gif'); background-position:center center; background-repeat: no-repeat;  background-size:70px; }
  
 .is-invalid{
@@ -18,8 +20,7 @@
 
 
 
-<?php $ini = parse_ini_file('../app.ini'); ?>
-    <?php include $_SERVER["DOCUMENT_ROOT"].$ini['folder_path'].'includes/header.php';?>
+
     <section style="background-color:#e4ab01; background-image:url(/assets/img/other/contact-top-bg.png); background-repeat:no-repeat; background-size:cover; background-position:center;">
         <div class="container">
 
@@ -73,23 +74,23 @@
                     
                      <div style="width:100%; padding-bottom:15px;" class="form-mail" >
                         <input type="text" id ="name"  data-validation-pattern=""  required name = "sendername" class="con-input-element" placeholder="Name*" data-key="person_name" data-group="contact-us" />
-                        <span class="formerror  " style="display: none; color: red;">Not Valid</span>
+                        <span class="formerror  " style="display: none; color: red;"></span>
                     </div>
                     <div style="width:100%; padding-bottom:15px;" class="form-mail">
                         <input type="text" id ="email"  data-validation-pattern="" required name = "senderemail"  class="con-input-element" placeholder="Email Address*" data-key="person_email" data-group="contact-us" />
-                        <span class="formerror  " style="display: none; color: red;">Not Valid</span>
+                        <span class="formerror  " style="display: none; color: red;"></span>
                     </div>
                     <div style="width:100%; padding-bottom:15px;" class="form-mail">
                         <input type="tel" id ="phone"  data-validation-pattern="" required name = "senderph"  class="con-input-element" placeholder="Phone*" data-key="person_phone" data-group="contact-us" />
-                        <span class="formerror  " style="display: none; color: red;">Not Valid</span>
+                        <span class="formerror  " style="display: none; color: red;"></span>
                     </div>
                     <div style="width:100%; padding-bottom:15px;" class="form-mail">
                         <input class="con-input-element con-input-area"  id = "msg"  placeholder="Message*"  data-key="person_msg" data-group="contact-us" />
-                        <span class="formerror  " style="display: none; color: red;">Not Valid</span>
+                        <span class="formerror  " style="display: none; color: red;"></span>
                     </div>
                     <div style="width:100%; padding-bottom:15px; text-align:center; " id= "loading-spiner" class="form-mail">
                         <input type="submit"  id="submit_btn" class="btn yellow large btn-decoration"  data-selgroup="contact-us" data-controller="contactus" data-func="SendQuery" />    
-                        <span class= "empty-error" style="display:none;">invalid credentials!</span> 
+                        <span class= "empty-error" style="display:none; color:red">Something is missing!</span> 
                         <span  class="btn default  large btn-decoration loading-btn" style=" display:none;">Sending..</span>
                     </div> 
                

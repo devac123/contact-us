@@ -286,7 +286,7 @@ We have designed and developed over 350 web sites across the globe. Our online s
                          Logo is the your very first impression to your customers, we make it shine.
                     </div>
                     <div style="text-align:center;">
-                        <a href="logo-design"><div class="btn green" style="margin:10px auto;" >Learn More</div></a>
+                        <a href="logo-design"><div class="btn yellow" style="margin:10px auto;" >Learn More</div></a>
                     </div>
 
 
@@ -313,7 +313,7 @@ We have designed and developed over 350 web sites across the globe. Our online s
                          We provide wide graphics designing services from simple vectors to complex themes.
                     </div>
                     <div style="text-align:center;">
-                        <a href="graphics-design"><div class="btn green" style="margin:10px auto;" >Learn More</div></a>
+                        <a href="graphics-design"><div class="btn yellow" style="margin:10px auto;" >Learn More</div></a>
                     </div>
 
 
@@ -341,7 +341,7 @@ We have designed and developed over 350 web sites across the globe. Our online s
                           Our SEO service will help you to rank high amoung your competition.
                     </div>
                     <div style="text-align:center;">
-                        <a href="search-engine-optimization"><div class="btn green" style="margin:10px auto;" >Learn More</div></a>
+                        <a href="search-engine-optimization"><div class="btn yellow" style="margin:10px auto;" >Learn More</div></a>
                     </div>
 
 

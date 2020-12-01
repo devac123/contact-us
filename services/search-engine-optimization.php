@@ -290,7 +290,7 @@ requirements on a monthly basis allowing you time to enjoy running your business
                         Grow your business with the help of social media sites like Facebook, Google+ etc.
                     </div>
                     <div style="text-align:center;">
-                        <a href="social-media-marketing"><div class="btn green" style="margin:10px auto;" >Learn More</div></a>
+                        <a href="social-media-marketing"><div class="btn yellow" style="margin:10px auto;" >Learn More</div></a>
                     </div>
 
 
@@ -317,7 +317,7 @@ requirements on a monthly basis allowing you time to enjoy running your business
                          We provide good and engaing content for your website and blog.
                     </div>
                     <div style="text-align:center;">
-                        <a href="content-writing"><div class="btn green" style="margin:10px auto;" >Learn More</div></a>
+                        <a href="content-writing"><div class="btn yellow" style="margin:10px auto;" >Learn More</div></a>
                     </div>
 
 
@@ -346,7 +346,7 @@ requirements on a monthly basis allowing you time to enjoy running your business
                          We provide complete solution and expertise to design an engaing website for your business.
                     </div>
                     <div style="text-align:center;">
-                        <a href="website-development"><div class="btn green" style="margin:10px auto;" >Learn More</div></a>
+                        <a href="website-development"><div class="btn yellow" style="margin:10px auto;" >Learn More</div></a>
                     </div>
 
 
@@ -376,7 +376,7 @@ requirements on a monthly basis allowing you time to enjoy running your business
                          We help you to grow your business with various Pay Per click services.
                     </div>
                     <div style="text-align:center;">
-                        <a href="pay-per-click"><div class="btn green" style="margin:10px auto;" >Learn More</div></a>
+                        <a href="pay-per-click"><div class="btn yellow" style="margin:10px auto;" >Learn More</div></a>
                     </div>
 
 
@@ -403,7 +403,7 @@ requirements on a monthly basis allowing you time to enjoy running your business
                          We help you to grow your sales by taking your shop / business online.
                     </div>
                     <div style="text-align:center;">
-                        <a href="e-commerce"><div class="btn green" style="margin:10px auto;" >Learn More</div></a>
+                        <a href="e-commerce"><div class="btn yellow" style="margin:10px auto;" >Learn More</div></a>
                     </div>
 
 
@@ -432,7 +432,7 @@ requirements on a monthly basis allowing you time to enjoy running your business
                          We can develop your desired application with multiple mobile platform support.
                     </div>
                     <div style="text-align:center;">
-                        <a href="app-development"><div class="btn green" style="margin:10px auto;" >Learn More</div></a>
+                        <a href="app-development"><div class="btn yellow" style="margin:10px auto;" >Learn More</div></a>
                     </div>
 
 
